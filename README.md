@@ -8,7 +8,7 @@ It is applicable for all the promotion rules, It will appear in `Create whole-or
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_promo_flat_order_total_percent', github: 'vishalzambre/spree_promo_flat_order_total_percent', branch: '3-1-stable'
+  gem 'spree_promo_flat_order_total_percent', github: 'vishalzambre/spree_promo_flat_order_total_percent', branch: '3-0-stable'
   ```
 
 2. Install the gem using Bundler:
