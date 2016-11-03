@@ -3,9 +3,7 @@ require 'spec_helper'
 describe Spree::Calculator::FlatPercentOrderTotal, :type => :model do
   let(:calculator) { Spree::Calculator::FlatPercentOrderTotal.new }
   let(:order) do
-    mock_model(
-      Spree::Order, quantity: 10, currency: 'USD'
-    )
+    FactoryGirl.create(:order)
   end
 
   before { allow(calculator).to receive_messages preferred_flat_percent: 100 }
