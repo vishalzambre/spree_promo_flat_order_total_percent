@@ -11,7 +11,7 @@ module Spree
     def remove_payment_attributes
       return unless @order.flat_percent_order?
       params.delete(:payment_source)
-      params[:order].delete(:payments_attributes)
+      params[:order].try(:delete, :payments_attributes)
     end
 
     def insufficient_payment?

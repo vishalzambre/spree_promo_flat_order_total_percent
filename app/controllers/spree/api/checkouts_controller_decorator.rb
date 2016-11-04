@@ -9,7 +9,7 @@ module Spree
         @order = Spree::Order.lock(true).find_by!(number: params[:id])
         return unless @order.flat_percent_order?
         params.delete(:payment_source)
-        params[:order].delete(:payments_attributes) if params[:order]
+        params[:order].try(:delete, :payments_attributes)
       end
     end
   end
