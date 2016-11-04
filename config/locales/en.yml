@@ -3,3 +3,7 @@
 
 en:
   hello: "Hello world"
+  spree:
+    flat_percent: Flat Percent Item Total
+    flat_percent_order: Flat Percent Order Total
+    apply: 'Apply'
